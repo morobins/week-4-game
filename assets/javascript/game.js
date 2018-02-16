@@ -8,8 +8,8 @@ var redGem = Math.floor(Math.random() * 12) + 1;
 console.log(redGem);
 var blueGem = Math.floor(Math.random() * 12) + 1;
 console.log(blueGem);
-var diamond = Math.floor(Math.random() * 12) + 1;
-console.log(diamond);
+var greenGem = Math.floor(Math.random() * 12) + 1;
+console.log(greenGem);
 var pinkGem = Math.floor(Math.random() * 12) + 1;
 console.log(pinkGem);
 var wins = 0
@@ -21,7 +21,7 @@ currentValue = 0;
 randomNumber = Math.floor(Math.random() * 120) + 19;
 redGem = Math.floor(Math.random() * 12) + 1;
 blueGem = Math.floor(Math.random() * 12) + 1;
-diamond = Math.floor(Math.random() * 12) + 1;
+greenGem = Math.floor(Math.random() * 12) + 1;
 pinkGem = Math.floor(Math.random() * 12) + 1;
 }
 
@@ -29,12 +29,13 @@ pinkGem = Math.floor(Math.random() * 12) + 1;
 $('#random-number').text(randomNumber);
 
 //on click add value to currentValue
+$(blueGem).text($(this).attr("data-letter"));
 // var crystalValue = ($(this).attr("data-crystalvalue"));
 $('.crystals').on("click", function() {
 // var currentValue + blueGem
 });
 
-$('#diamond').on('click', )
+$('#green-gem').on('click', )
 $('#pink-gem').on('click', )
 $('#red-gem').on('click', )
 // if user score equals the random number the player wins and game resets
