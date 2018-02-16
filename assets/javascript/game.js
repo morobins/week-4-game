@@ -1,4 +1,5 @@
 // Name Variables for counter, user score, random number and crystal values
+var counter = 0;
 
 // write a loop to pick a random number from an array
 
