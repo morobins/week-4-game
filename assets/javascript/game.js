@@ -1,5 +1,18 @@
 // Name Variables for counter, user score, random number and crystal values
-var counter = 0;
+var randomNumber = Math.floor(Math.random() * 120) + 19;
+console.log(randomNumber);
+var currentValue = 0;
+var redGem = Math.floor(Math.random() * 12) + 1;
+console.log(redGem);
+var blueGem = Math.floor(Math.random() * 12) + 1;
+console.log(blueGem);
+var diamond = Math.floor(Math.random() * 12) + 1;
+console.log(diamond);
+var pinkGem = Math.floor(Math.random() * 12) + 1;
+console.log(pinkGem);
+
+$
+
 
 // write a loop to pick a random number from an array
 
