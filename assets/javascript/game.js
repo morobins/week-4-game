@@ -29,7 +29,8 @@ pinkGem = Math.floor(Math.random() * 12) + 1;
 $('#random-number').text(randomNumber);
 
 //on click add value to currentValue
-$("#blue-gem").on("click", function() {
+// var crystalValue = ($(this).attr("data-crystalvalue"));
+$('.crystals').on("click", function() {
 // var currentValue + blueGem
 });
 
