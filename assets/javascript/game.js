@@ -23,7 +23,7 @@ $('.document').ready(function () {
     currentValue = 0;
     randomNumber = Math.floor(Math.random() * 120) + 19;
     $("#random-number").text(randomNumber);
-    gems = [redGem, blueGem, greenGem, pinkGem];
+    console.log("There are new values");
     redGem = Math.floor(Math.random() * 12) + 1;
     blueGem = Math.floor(Math.random() * 12) + 1;
     greenGem = Math.floor(Math.random() * 12) + 1;
