@@ -27,6 +27,7 @@ gems = Math.floor(Math.random() * 12) + 1;
 // blueGem = Math.floor(Math.random() * 12) + 1;
 // greenGem = Math.floor(Math.random() * 12) + 1;
 // pinkGem = Math.floor(Math.random() * 12) + 1;
+$("#random-number").text(randomNumber);
 }
 
 //set text numbers
