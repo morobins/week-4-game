@@ -15,8 +15,8 @@ var pinkGem = Math.floor(Math.random() * 12) + 1;
 // console.log(pinkGem);
 var gems = [redGem, blueGem, greenGem, pinkGem];
 console.log(gems);
-var wins = 0
-var loses = 0
+var wins = 0;
+var loses = 0;
 
 // reset game 
 var reset = function () {
@@ -38,7 +38,7 @@ $('#loses').text(loses);
 // run for loop to a value into each crystal
 for (i = 0; i < gems.length; i++) {
   var gemsOptions = $("img").html(gems[i]);
-  // gemsOptions.addClass("gemStones");
+  gemsOptions.addClass("gemStones");
  
   gemsOptions.attr("data-gems", gems[i]);
   gemsOptions.text(gems[i]);
@@ -50,8 +50,10 @@ for (i = 0; i < gems.length; i++) {
 // $(gems).text($(this).attr("data-letter"));
 
 //on click add crystalValue to currentValue
-$('#crystals').on("click", function() {
+$('.gemStones').on("click", function() {
   var crystalValue = ($(this).attr("data-gems"));
+  $(crystalValue).text($(this).attr("data-gems"));
+  console.log(crystalValue);
   crystalValue = parseInt(crystalValue);
   currentValue += crystalValue;
   $('#current-value').text(currentValue);
