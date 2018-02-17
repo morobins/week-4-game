@@ -14,7 +14,7 @@ var greenGem = Math.floor(Math.random() * 12) + 1;
 var pinkGem = Math.floor(Math.random() * 12) + 1;
 // console.log(pinkGem);
 var gems = [redGem, blueGem, greenGem, pinkGem];
-console.log(gems);
+console.log("gems"+  gems);
 var wins = 0;
 var losses = 0;
 
@@ -36,14 +36,22 @@ $('#losses').text(losses);
 
 
 // run for loop to a value into each crystal
+
+
 for (i = 0; i < gems.length; i++) {
-  var gemsOptions = $("img").html(gems[i]);
+  console.log(gems[i]);
+
+  // var gemsOptions = $("img").html(gems[i]);
+//look up how to do this with jQuery
+ var gemsOptions_js = document.getElementsByTagName("img")[i];  
+  var gemsOptions = $(gemsOptions_js);
+
   gemsOptions.addClass("gemStones");
- 
+
   gemsOptions.attr("data-gems", gems[i]);
   gemsOptions.text(gems[i]);
   // console.log(gems[i]);
-  $("#crystals").append(gemsOptions);
+  // $("#crystals").append(gemsOptions);
 };
 
 // var gems = $('.crystals img');
