@@ -16,7 +16,7 @@ var pinkGem = Math.floor(Math.random() * 12) + 1;
 var gems = [redGem, blueGem, greenGem, pinkGem];
 console.log(gems);
 var wins = 0;
-var loses = 0;
+var losses = 0;
 
 // reset game 
 var reset = function () {
@@ -32,7 +32,7 @@ gems = Math.floor(Math.random() * 12) + 1;
 //set text numbers
 $('#random-number').text(randomNumber);
 $('#wins').text(wins);
-$('#loses').text(loses);
+$('#losses').text(losses);
 
 
 // run for loop to a value into each crystal
@@ -57,19 +57,23 @@ $('.gemStones').on("click", function() {
   crystalValue = parseInt(crystalValue);
   currentValue += crystalValue;
   $('#current-value').text(currentValue);
-  alert(crystalValue);
-});
+  // alert(crystalValue);
+
 
 // if user score equals the random number the player wins and game resets
 if (currentValue === randomNumber) {
-  wins++
-} else if (currentValue < randomNumber) {
+  wins++;
+  $("#wins").text(wins);
+  reset();
+// } else if (currentValue <= randomNumber) {
   //keep counting
+} else if (currentValue >= randomNumber) {
+  losses++;
+  $("#losses").text(losses);
+  reset();
 }
 
-if (currentValue > randomNumber) {
-  loses--;
-}
+});
 
 // else keep counting
 // if user guess is higher than random number player loses and game resets
