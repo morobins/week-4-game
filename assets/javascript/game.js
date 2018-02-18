@@ -28,7 +28,20 @@ $('.document').ready(function () {
     blueGem = Math.floor(Math.random() * 12) + 1;
     greenGem = Math.floor(Math.random() * 12) + 1;
     pinkGem = Math.floor(Math.random() * 12) + 1;
+    var gems = [redGem, blueGem, greenGem, pinkGem];
 
+    for (i = 0; i < gems.length; i++) {
+      console.log(gems[i]);
+  
+      // var gemsOptions = $("img").html(gems[i]);
+      //look up how to do this with jQuery
+      var gemsOptions_js = document.getElementsByTagName("img")[i];
+      var gemsOptions = $(gemsOptions_js);
+      gemsOptions.addClass("gemStones");
+      gemsOptions.attr("data-gems", gems[i]);
+      gemsOptions.text(gems[i]);
+      // console.log(gems[i]);
+    };
   }
 
   //set text numbers
