@@ -23,6 +23,7 @@ $('.document').ready(function () {
     currentValue = 0;
     randomNumber = Math.floor(Math.random() * 120) + 19;
     $("#random-number").text(randomNumber);
+    $("#current-value").text(currentValue);
     console.log("There are new values");
     redGem = Math.floor(Math.random() * 12) + 1;
     blueGem = Math.floor(Math.random() * 12) + 1;
@@ -48,6 +49,7 @@ $('.document').ready(function () {
   $('#random-number').text(randomNumber);
   $('#wins').text(wins);
   $('#losses').text(losses);
+  $("#current-value").text(currentValue);
 
 
   // run for loop to a value into each crystal
