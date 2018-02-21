@@ -33,7 +33,6 @@ $('.document').ready(function () {
 
     for (i = 0; i < gems.length; i++) {
       console.log(gems[i]);
-  
       // var gemsOptions = $("img").html(gems[i]);
       //look up how to do this with jQuery
       var gemsOptions_js = document.getElementsByTagName("img")[i];
@@ -53,11 +52,8 @@ $('.document').ready(function () {
 
 
   // run for loop to a value into each crystal
-
-
   for (i = 0; i < gems.length; i++) {
     console.log(gems[i]);
-
     // var gemsOptions = $("img").html(gems[i]);
     //look up how to do this with jQuery
     var gemsOptions_js = document.getElementsByTagName("img")[i];
