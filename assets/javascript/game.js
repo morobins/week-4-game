@@ -34,18 +34,6 @@ $('.document').ready(function () {
     $("img").each(function (i) {
       $(this).attr('data-gems', gems[i]).addClass('gemStones').text(gems[i]);
     });
-    //this is the long way
-    // for (i = 0; i < gems.length; i++) {
-    //   console.log(gems[i]);
-    //   // var gemsOptions = $("img").html(gems[i]);
-    //   //look up how to do this with jQuery
-    //   var gemsOptions_js = document.getElementsByTagName("img")[i];
-    //   var gemsOptions = $(gemsOptions_js);
-    //   gemsOptions.addClass("gemStones");
-    //   gemsOptions.attr("data-gems", gems[i]);
-    //   gemsOptions.text(gems[i]);
-    //   // console.log(gems[i]);
-    // };
   }
 
   //set text numbers
@@ -54,22 +42,9 @@ $('.document').ready(function () {
   $('#losses').text(losses);
   $("#current-value").text(currentValue);
 
-
-  // run for loop to a value into each crystal
-  // for (i = 0; i < gems.length; i++) {
-  //   console.log(gems[i]);
-  //   // var gemsOptions = $("img").html(gems[i]);
-  //   //look up how to do this with jQuery
-  //   // var gemsOptions_js = document.getElementsByTagName("img")[i];
-  //   // var gemsOptions = $(gemsOptions_js);
-  //   // gemsOptions.addClass("gemStones");
-  //   // gemsOptions.attr("data-gems", gems[i]);
-  //   // gemsOptions.text(gems[i]);
-
-
   //   // console.log(gems[i]);
   // };
-// Using the .each method to loop over each img to assign value into each crystal (and class and text in this situation)
+  // Using the .each method to loop over each img to assign value into each crystal (and class and text in this situation)
   $("img").each(function (i) {
     //this refers to the image at current iteration
     $(this).attr('data-gems', gems[i]).addClass('gemStones').text(gems[i]);
@@ -108,3 +83,14 @@ $('.document').ready(function () {
   // if user guess is higher than random number player loses and game resets
 
 });
+
+// run for loop to a value into each crystal (different way of doing lines 34 and 48)
+// for (i = 0; i < gems.length; i++) {
+//   console.log(gems[i]);
+//   // var gemsOptions = $("img").html(gems[i]);
+//   //look up how to do this with jQuery
+//   // var gemsOptions_js = document.getElementsByTagName("img")[i];
+//   // var gemsOptions = $(gemsOptions_js);
+//   // gemsOptions.addClass("gemStones");
+//   // gemsOptions.attr("data-gems", gems[i]);
+//   // gemsOptions.text(gems[i]);
