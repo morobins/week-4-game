@@ -55,6 +55,7 @@ $('.document').ready(function () {
 
   //on click add crystalValue to currentValue
   $('.gemStones').on("click", function () {
+    $(this).animate({height: '250px', width: '250px'}).animate({height: '200px', width: '200px'});
     var crystalValue = ($(this).attr("data-gems"));
     $(crystalValue).text($(this).attr("data-gems"));
     console.log(crystalValue);
